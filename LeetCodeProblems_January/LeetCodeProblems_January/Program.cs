@@ -8,8 +8,10 @@ namespace LeetCodeProblems_January
 {
     class Program
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            Day3_BeautifulArangement d3 = new Day3_BeautifulArangement();
+            d3.CountArrangement(3);
         }
     }
 }
