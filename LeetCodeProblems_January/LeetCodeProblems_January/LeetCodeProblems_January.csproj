@@ -46,6 +46,7 @@
     <Compile Include="Day1-CheckArrayFormation.cs" />
     <Compile Include="Day2-BTFindNodeInCloneTree.cs" />
     <Compile Include="Day3-BeautifulArangement.cs" />
+    <Compile Include="Day4-MergeTwoSortedLists.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
