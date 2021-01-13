@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4166724A-3E86-4021-A009-9DFDC35D2D34}</ProjectGuid>
+    <ProjectGuid>{8A996D93-07C7-4C74-A2F3-8C7BA10BD3B4}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LeetCodeProblems_January</RootNamespace>
-    <AssemblyName>LeetCodeProblems_January</AssemblyName>
+    <RootNamespace>LeetCodePacticeQuestions</RootNamespace>
+    <AssemblyName>LeetCodePacticeQuestions</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,13 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Day1-CheckArrayFormation.cs" />
-    <Compile Include="Day11-MergeSortedList.cs" />
-    <Compile Include="Day2-BTFindNodeInCloneTree.cs" />
-    <Compile Include="Day3-BeautifulArangement.cs" />
-    <Compile Include="Day4-MergeTwoSortedLists.cs" />
-    <Compile Include="Day5-RemoveDuplicateFromSortedList.cs" />
-    <Compile Include="Day6-KthMissingPositiveNumber.cs" />
+    <Compile Include="Array_AvoidFlood.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

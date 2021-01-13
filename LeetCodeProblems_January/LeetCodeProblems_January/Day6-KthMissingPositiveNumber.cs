@@ -12,9 +12,12 @@ namespace LeetCodeProblems_January
         {
             int low = 0;
             int high = arr.Length;
+            //Perform Binary Search
             while (low < high)
             {
+                //Select mid point for Binary Search
                 int mid = (high - low) / 2 + low;
+
                 if (arr[mid] - (mid + 1) >= k)
                 {
                     high = mid;
