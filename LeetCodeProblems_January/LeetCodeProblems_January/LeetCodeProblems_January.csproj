@@ -46,6 +46,7 @@
     <Compile Include="Day1-CheckArrayFormation.cs" />
     <Compile Include="Day11-MergeSortedList.cs" />
     <Compile Include="Day13-BoatsToSavePeople.cs" />
+    <Compile Include="Day14-ReduceVariableTo0.cs" />
     <Compile Include="Day2-BTFindNodeInCloneTree.cs" />
     <Compile Include="Day3-BeautifulArangement.cs" />
     <Compile Include="Day4-MergeTwoSortedLists.cs" />
