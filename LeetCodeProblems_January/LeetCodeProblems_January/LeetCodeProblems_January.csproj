@@ -48,6 +48,8 @@
     <Compile Include="Day13-BoatsToSavePeople.cs" />
     <Compile Include="Day14-ReduceVariableTo0.cs" />
     <Compile Include="Day15-GenerateArray.cs" />
+    <Compile Include="Day16-KthLargestElement.cs" />
+    <Compile Include="Day17-CombinationAndRepetation.cs" />
     <Compile Include="Day2-BTFindNodeInCloneTree.cs" />
     <Compile Include="Day3-BeautifulArangement.cs" />
     <Compile Include="Day4-MergeTwoSortedLists.cs" />
