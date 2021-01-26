@@ -56,6 +56,7 @@
     <Compile Include="Day21_MostCompetitiveSubsequence.cs" />
     <Compile Include="Day23_SortMatricDiagonally.cs" />
     <Compile Include="Day24_MergeKSortedList.cs" />
+    <Compile Include="Day25_1%27KPlaceAway.cs" />
     <Compile Include="Day3-BeautifulArangement.cs" />
     <Compile Include="Day4-MergeTwoSortedLists.cs" />
     <Compile Include="Day5-RemoveDuplicateFromSortedList.cs" />
