@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Day1_DistributeCandies.cs" />
     <Compile Include="Day2_SetMismatch.cs" />
+    <Compile Include="Day3_MissingNumber.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
