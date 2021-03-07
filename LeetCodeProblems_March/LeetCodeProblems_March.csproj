@@ -48,6 +48,7 @@
     <Compile Include="Day3_MissingNumber.cs" />
     <Compile Include="Day4_IntersectionofTwoLL.cs" />
     <Compile Include="Day5_AverageofLevelinBT.cs" />
+    <Compile Include="Day6_ShortEncodingOfWords.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

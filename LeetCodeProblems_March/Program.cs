@@ -10,8 +10,11 @@ namespace LeetCodeProblems_March
     {
         static void Main(string[] args)
         {
-            Day1_DistributeCandies d1 = new Day1_DistributeCandies();
-            d1.DistributeCandies(new int[] { 1,1,2,2,3,3});
+            //Day1_DistributeCandies d1 = new Day1_DistributeCandies();
+            //d1.DistributeCandies(new int[] { 1,1,2,2,3,3});
+
+            Day6_ShortEncodingOfWords d6 = new Day6_ShortEncodingOfWords();
+            d6.Trie_MinimumLengthEncoding(new string[] { "time","me","bell"});
         }
     }
 }
