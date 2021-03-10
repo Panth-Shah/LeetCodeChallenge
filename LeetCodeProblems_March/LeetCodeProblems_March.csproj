@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseClass.cs" />
     <Compile Include="Day1_DistributeCandies.cs" />
     <Compile Include="Day2_SetMismatch.cs" />
     <Compile Include="Day3_MissingNumber.cs" />
@@ -50,6 +51,7 @@
     <Compile Include="Day5_AverageofLevelinBT.cs" />
     <Compile Include="Day6_ShortEncodingOfWords.cs" />
     <Compile Include="Day8_RemovePalindromicSubsequence.cs" />
+    <Compile Include="Day9_AddOneRowToTree.cs" />
     <Compile Include="MyHashMap.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
