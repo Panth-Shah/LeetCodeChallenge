@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseClass.cs" />
+    <Compile Include="Day10_IntToRoman.cs" />
     <Compile Include="Day1_DistributeCandies.cs" />
     <Compile Include="Day2_SetMismatch.cs" />
     <Compile Include="Day3_MissingNumber.cs" />
