@@ -16,8 +16,11 @@ namespace LeetCodeProblems_March
             //Day6_ShortEncodingOfWords d6 = new Day6_ShortEncodingOfWords();
             //d6.Trie_MinimumLengthEncoding(new string[] { "time","me","bell"});
 
-            Day8_RemovePalindromicSubsequence d8 = new Day8_RemovePalindromicSubsequence();
-            d8.RemovePalindromeSub("aaaaabaaaab");
+            //Day8_RemovePalindromicSubsequence d8 = new Day8_RemovePalindromicSubsequence();
+            //d8.RemovePalindromeSub("aaaaabaaaab");
+
+            Day12_StringContainsAllBinaryCodes d12 = new Day12_StringContainsAllBinaryCodes();
+            d12.HasAllCodes("00110011",3);
         }
     }
 }
