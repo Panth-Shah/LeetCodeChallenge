@@ -47,6 +47,7 @@
     <Compile Include="Day10_IntToRoman.cs" />
     <Compile Include="Day11_CoinChange.cs" />
     <Compile Include="Day12_StringContainsAllBinaryCodes.cs" />
+    <Compile Include="Day14_ExchangeLinkedListNodes.cs" />
     <Compile Include="Day1_DistributeCandies.cs" />
     <Compile Include="Day2_SetMismatch.cs" />
     <Compile Include="Day3_MissingNumber.cs" />
