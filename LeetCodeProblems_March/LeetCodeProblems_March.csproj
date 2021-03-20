@@ -52,6 +52,7 @@
     <Compile Include="Day16_BuySellStocks.cs" />
     <Compile Include="Day17_GenerateRandomPointsInCircle.cs" />
     <Compile Include="Day18_WiggleSubsequence.cs" />
+    <Compile Include="Day19_KeysAndRooms.cs" />
     <Compile Include="Day1_DistributeCandies.cs" />
     <Compile Include="Day2_SetMismatch.cs" />
     <Compile Include="Day3_MissingNumber.cs" />
