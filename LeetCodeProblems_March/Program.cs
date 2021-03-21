@@ -19,8 +19,19 @@ namespace LeetCodeProblems_March
             //Day8_RemovePalindromicSubsequence d8 = new Day8_RemovePalindromicSubsequence();
             //d8.RemovePalindromeSub("aaaaabaaaab");
 
-            Day12_StringContainsAllBinaryCodes d12 = new Day12_StringContainsAllBinaryCodes();
-            d12.HasAllCodes("00110011",3);
+            //Day12_StringContainsAllBinaryCodes d12 = new Day12_StringContainsAllBinaryCodes();
+            //d12.HasAllCodes("00110011",3);
+
+            Day20_DesignUndergroundSystem undergroundSystem = new Day20_DesignUndergroundSystem();
+            undergroundSystem.CheckIn(10, "Leyton", 3);
+            undergroundSystem.CheckOut(10, "Paradise", 8);
+            undergroundSystem.GetAverageTime("Leyton", "Paradise"); // return 5.00000
+            undergroundSystem.CheckIn(5, "Leyton", 10);
+            undergroundSystem.CheckOut(5, "Paradise", 16);
+            undergroundSystem.GetAverageTime("Leyton", "Paradise"); // return 5.50000
+            undergroundSystem.CheckIn(2, "Leyton", 21);
+            undergroundSystem.CheckOut(2, "Paradise", 30);
+            undergroundSystem.GetAverageTime("Leyton", "Paradise"); // return 6.66667
         }
     }
 }

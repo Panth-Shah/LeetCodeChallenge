@@ -9,9 +9,12 @@ namespace LeetCodeProblems_March
     public class Day20_DesignUndergroundSystem
     {
         private CustomerRecord customerRecordKeeper;
+        private Dictionary<string, TripRecord> tripRecordKeeper;
         public Day20_DesignUndergroundSystem()
         {
             customerRecordKeeper = new CustomerRecord();
+            tripRecordKeeper = new Dictionary<string, TripRecord>();
+
         }
 
         public void CheckIn(int id, string stationName, int t)
@@ -21,23 +24,24 @@ namespace LeetCodeProblems_March
 
         public void CheckOut(int id, string stationName, int t)
         {
-            customerRecordKeeper.CustomerCheckOut(id, stationName, t);
+            customerRecordKeeper.CustomerCheckOut(id, stationName, t, ref tripRecordKeeper);
         }
 
         public double GetAverageTime(string startStation, string endStation)
         {
             double res = 0;
+            string key = $"{startStation}{endStation}";
+            if (tripRecordKeeper.ContainsKey(key))
+            {
+                res = (double) tripRecordKeeper[key].TotalTimeTaken / tripRecordKeeper[key].TotalTripTaken;
+            }
+            else
+            {
+                throw new Exception("No Trip Record Exist");
+            }
             return res;
         }
     }
-
-    /**
-     * Your UndergroundSystem object will be instantiated and called as such:
-     * UndergroundSystem obj = new UndergroundSystem();
-     * obj.CheckIn(id,stationName,t);
-     * obj.CheckOut(id,stationName,t);
-     * double param_3 = obj.GetAverageTime(startStation,endStation);
-     */
 
     public class CustomerRecord
     {
@@ -53,19 +57,32 @@ namespace LeetCodeProblems_March
             {
                 customerTripsDict.Add(customerId, new List<CustomerTrips>());
             }
-
             customerTripsDict[customerId].Add(new CustomerTrips(checkInStation, checkInTime));
         }
 
-        public void CustomerCheckOut(int cusomerId, string checkOutStation, int checkOutTime)
+        public void CustomerCheckOut(int cusomerId, string checkOutStation, int checkOutTime, ref Dictionary<string, TripRecord> tripRecords)
         {
             if (customerTripsDict.ContainsKey(cusomerId))
             {
+                //Currently, assumption is Cusomer will only have one Active trip at a time and so this logic
+                //If in future enhancement, more Active trips is a usecase,this logic will change with additional filter criteria
                 var activeTrip = customerTripsDict[cusomerId].Where(p => !p.IsTripCompleted).FirstOrDefault();
+
+                //Checkout Current Active trip 
                 activeTrip.CheckOutLocation = checkOutStation;
                 activeTrip.CheckOutTime = checkOutTime;
                 activeTrip.IsTripCompleted = true;
-                //Only set Trip record upon checkout
+
+                //Add trip record in TripRecordKeeper list reference
+                string key = $"{activeTrip.CheckInLocation}{checkOutStation}";
+                if (!tripRecords.ContainsKey(key))
+                {
+                    tripRecords.Add(key, new TripRecord());
+                }
+                tripRecords[key].StartLocation = activeTrip.CheckInLocation;
+                tripRecords[key].EndLocation = checkOutStation;
+                tripRecords[key].TotalTimeTaken += checkOutTime - activeTrip.CheckInTime;
+                tripRecords[key].TotalTripTaken += 1;
             }
         }
     }
@@ -74,8 +91,8 @@ namespace LeetCodeProblems_March
     {
         public string StartLocation { get; set; }
         public string EndLocation { get; set; }
-        public int TotalTimeTaken { get; set; }
-        public int TotalTripTaken { get; set; }
+        public int TotalTimeTaken { get; set; } = 0;
+        public int TotalTripTaken { get; set; } = 0;
         public TripRecord()
         {
 
@@ -90,7 +107,6 @@ namespace LeetCodeProblems_March
         public string CheckOutLocation { get; set; }
         public int CheckOutTime { get; set; }
         public bool IsTripCompleted { get; set; }
-        public int AveragetravelTime { get; set; }
 
         public CustomerTrips(string checkInLocation, int checkInTime)
         {
@@ -99,4 +115,12 @@ namespace LeetCodeProblems_March
             this.IsTripCompleted = false; 
         }
     }
+
+    /**
+     * Your UndergroundSystem object will be instantiated and called as such:
+     * UndergroundSystem obj = new UndergroundSystem();
+     * obj.CheckIn(id,stationName,t);
+     * obj.CheckOut(id,stationName,t);
+     * double param_3 = obj.GetAverageTime(startStation,endStation);
+     */
 }
