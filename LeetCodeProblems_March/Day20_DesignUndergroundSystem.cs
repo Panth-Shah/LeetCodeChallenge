@@ -8,13 +8,14 @@ namespace LeetCodeProblems_March
 {
     public class Day20_DesignUndergroundSystem
     {
+        //Note: With this version of code, I am not keeping track of all the completed trips of the customer,
+        //I am only tracking trip record for the trips happened directly between StartStation and EndStation
         private CustomerRecord customerRecordKeeper;
         private Dictionary<string, TripRecord> tripRecordKeeper;
         public Day20_DesignUndergroundSystem()
         {
             customerRecordKeeper = new CustomerRecord();
             tripRecordKeeper = new Dictionary<string, TripRecord>();
-
         }
 
         public void CheckIn(int id, string stationName, int t)
@@ -29,11 +30,11 @@ namespace LeetCodeProblems_March
 
         public double GetAverageTime(string startStation, string endStation)
         {
-            double res = 0;
             string key = $"{startStation}{endStation}";
+            double res;
             if (tripRecordKeeper.ContainsKey(key))
             {
-                res = (double) tripRecordKeeper[key].TotalTimeTaken / tripRecordKeeper[key].TotalTripTaken;
+                res = (double)tripRecordKeeper[key].TotalTimeTaken / tripRecordKeeper[key].TotalTripTaken;
             }
             else
             {
