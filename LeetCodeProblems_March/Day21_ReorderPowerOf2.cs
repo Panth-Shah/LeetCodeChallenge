@@ -24,8 +24,8 @@ namespace LeetCodeProblems_March
             int P = 1;
             for (int i = 0; i < 30; i++)
             {
-                int[] dig = new int[10];
-                for (int j = 0; j < 10; j++) dig[j] = ndig[j];
+                int[] dig = (int[])ndig.Clone();
+                //for (int j = 0; j < 10; j++) dig[j] = ndig[j];
 
                 if (i > 0) P = 2 * P;
                 string strP = P.ToString();

@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BaseClass.cs" />
+    <Compile Include="Day22_VowelSpellchecker.cs" />
     <Compile Include="Day10_IntToRoman.cs" />
     <Compile Include="Day11_CoinChange.cs" />
     <Compile Include="Day12_StringContainsAllBinaryCodes.cs" />
