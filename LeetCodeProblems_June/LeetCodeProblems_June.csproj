@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Day1_MaxAreaOfIsland.cs" />
     <Compile Include="Day2_InterleavingString.cs" />
+    <Compile Include="Day3_MaxAreaOfPieceOfCake.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
