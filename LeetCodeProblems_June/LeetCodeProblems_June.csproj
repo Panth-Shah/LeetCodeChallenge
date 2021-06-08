@@ -48,6 +48,7 @@
     <Compile Include="Day3_MaxAreaOfPieceOfCake.cs" />
     <Compile Include="Day5_MaxPerformanceOfTeam.cs" />
     <Compile Include="Day6_LongestConsecutiveSequence.cs" />
+    <Compile Include="Day7_MinCostClimbingStairs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
