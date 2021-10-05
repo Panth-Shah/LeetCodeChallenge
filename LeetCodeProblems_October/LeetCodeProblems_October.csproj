@@ -4,17 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A88A74DF-6DCA-452C-B71C-0D41864EBC3A}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>LeetCodeProblems_June</RootNamespace>
-    <AssemblyName>LeetCodeProblems_June</AssemblyName>
+    <ProjectGuid>{CAE1D30C-9042-43DC-8E1A-E8677F6E4569}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LeetCodeProblems_October</RootNamespace>
+    <AssemblyName>LeetCodeProblems_October</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +23,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -43,24 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Day1_MaxAreaOfIsland.cs" />
-    <Compile Include="Day2_InterleavingString.cs" />
-    <Compile Include="Day3_MaxAreaOfPieceOfCake.cs" />
-    <Compile Include="Day5_MaxPerformanceOfTeam.cs" />
-    <Compile Include="Day6_LongestConsecutiveSequence.cs" />
-    <Compile Include="Day7_MinCostClimbingStairs.cs" />
-    <Compile Include="Day8_ConstructBST.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Day1_LongestCommonSubsequence.cs" />
+    <Compile Include="Day2_DungeonGame.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\LeetCodeProblems_January\LeetCodeProblems_January.csproj">
-      <Project>{4166724a-3e86-4021-a009-9dfdc35d2d34}</Project>
-      <Name>LeetCodeProblems_January</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

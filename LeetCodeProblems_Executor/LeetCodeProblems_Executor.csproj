@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A88A74DF-6DCA-452C-B71C-0D41864EBC3A}</ProjectGuid>
+    <ProjectGuid>{DF64E9BD-001F-46F7-9140-96715B945DB4}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>LeetCodeProblems_June</RootNamespace>
-    <AssemblyName>LeetCodeProblems_June</AssemblyName>
+    <RootNamespace>LeetCodeProblems_Executor</RootNamespace>
+    <AssemblyName>LeetCodeProblems_Executor</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,13 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Day1_MaxAreaOfIsland.cs" />
-    <Compile Include="Day2_InterleavingString.cs" />
-    <Compile Include="Day3_MaxAreaOfPieceOfCake.cs" />
-    <Compile Include="Day5_MaxPerformanceOfTeam.cs" />
-    <Compile Include="Day6_LongestConsecutiveSequence.cs" />
-    <Compile Include="Day7_MinCostClimbingStairs.cs" />
-    <Compile Include="Day8_ConstructBST.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -57,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LeetCodeProblems_January\LeetCodeProblems_January.csproj">
-      <Project>{4166724a-3e86-4021-a009-9dfdc35d2d34}</Project>
-      <Name>LeetCodeProblems_January</Name>
+    <ProjectReference Include="..\LeetCodeProblems_October\LeetCodeProblems_October.csproj">
+      <Project>{cae1d30c-9042-43dc-8e1a-e8677f6e4569}</Project>
+      <Name>LeetCodeProblems_October</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
